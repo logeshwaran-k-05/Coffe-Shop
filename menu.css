@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f8f5f2;
+}
+
+/* Header */
+.menu-header{
+    background: #3e2723;
+    color: white;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-header h1{
+    font-size: 36px;
+}
+
+.back-btn{
+    text-decoration: none;
+    background: #d4a373;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.back-btn:hover{
+    background: #b5835a;
+}
+
+/* Menu Section */
+.menu-section{
+    padding: 60px 8%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu-card{
+    width: 280px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.menu-card:hover{
+    transform: translateY(-10px);
+}
+
+.menu-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.menu-card h2{
+    margin-top: 15px;
+    color: #6f4e37;
+}
+
+.menu-card p{
+    padding: 10px;
+    color: #666;
+}
+
+.menu-card span{
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #3e2723;
+    font-size: 18px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .menu-header{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
